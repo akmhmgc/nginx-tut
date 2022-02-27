@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    build: .
+    stdin_open: true
+    tty: true
+    ports:
+      - "8088:80"
+    volumes:
+      - ./src:/usr/share/nginx/html
+      - ./conf:/etc/nginx/conf.d
+
