@@ -1,2 +1,3 @@
 FROM nginx
-RUN apt update && apt install -y procps
+RUN apt update && apt install -y procps\
+  vim
